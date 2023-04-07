@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/contactSlice';
 import css from '../Contact/Contact.module.css';
 
+
 export function Contact({ name, number, id }) {
   const dispatch = useDispatch();
 
@@ -27,7 +28,7 @@ export function Contact({ name, number, id }) {
       </div>
     </>
   );
-}
+};
 
 Contact.prototype = {
   name: PropTypes.string.isRequired,
